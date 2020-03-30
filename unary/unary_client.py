@@ -13,7 +13,7 @@ class UnaryClient(object):
         # the port to which the client should connect
         # to.
         self.host = 'localhost'
-        self.server_port = 46001
+        self.server_port = 50051
 
         # instantiate a communication channel
         self.channel = grpc.insecure_channel(
@@ -24,7 +24,7 @@ class UnaryClient(object):
 
     def get_url(self, message):
         """
-        Client function to call the rpc for GetDigest
+        Client function to call the rpc for GetServerResponse
         """
         message = pb2.Message(message=message)
         print(f'{message}')
