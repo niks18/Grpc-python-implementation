@@ -1,4 +1,4 @@
-grpcio==1.27.2
+grpcio==1.53.0
 grpcio-tools==1.27.2
 pkg-resources==0.0.0
 protobuf==3.11.3
